@@ -1,0 +1,74 @@
+#movielist{
+    position: absolute;
+    top: 15%;
+    height:100%;
+    width: 100%;
+}
+
+
+
+.movie{
+    position: relative;
+    height:30%;
+    width: 80%;
+    left: 12%;    
+}
+
+.movie h3{
+    position: relative;
+    margin-bottom: 4%;
+    width: 20%;
+    height: auto;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+}
+
+.movie p{
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.movie img{
+    position: relative;
+    top:0;
+    left: 13%;
+    width:167px;
+    height: 130px;   
+}
+
+
+.hexagon {    
+	width: 230px;
+	height: 150px;
+	background: #FFD966;
+	position: relative;
+    float: left;
+    margin-left: 8%;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 115px solid transparent;
+	border-right:115px solid transparent;
+	border-bottom: 50px solid #FFD966;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 115px solid transparent;
+	border-right: 115px solid transparent;
+	border-top: 50px solid #FFD966;
+}

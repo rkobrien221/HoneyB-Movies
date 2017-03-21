@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+        <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+		<link href="css/shared.css" rel="stylesheet" type="text/css" />
+        <link href="css/form.css" rel="stylesheet" type="text/css" />
+		<title>Honey B-Movies</title>
+        <script type="text/javascript" src="js/slideshow.js"></script>
+        <script type="text/javascript" src="js/validation.js"></script>
+		
+	</head>
+	<body>
+        <div id="banner">
+            <a href="index.html"><img id="beeLogo" src="images/beeup.png" alt="banner" onmouseover="this.src='images/beedown.png'" onmouseout="this.src='images/beeup.png'" /></a>
+            <h1 id="bannerName">Honey B-Movies</h1>
+            
+            <div id="navigation">
+                    
+                <a class="navlink" href="index.html" onmouseover="this.style.backgroundColor='#FFD966';" onmouseout="this.style.backgroundColor = '#F7BA00'">Home</a>
+                    
+                <a class="navlink" href="movies.html" onmouseover="this.style.backgroundColor='#FFD966';" onmouseout="this.style.backgroundColor = '#F7BA00'">The Hive</a>            
+            </div>         
+              
+            </div>
+            <h2 class="pagename">Rental Form</h2>
+            <div id="formWrap">                
+                <form name="rentForm" id="rentForm" action="thanks.html" method="get">
+                    <fieldset id="contact">
+                        <!--Renter's Contact Information -->
+                        <legend>Renter Information</legend>
+                        <label class="lower">First Name:<input type="text" name="fName" id="fName" value="" /></label>
+                        <label>Last Name:<input  type="text" name="lName" id="lName" /></label>
+                        <label>Address:<input class="address" type="text" name="address" id="address" /></label>
+                        <label>Address 2:<input class="address" type="text" name="address2" id="address2" /></label>
+                        <label>City:<input type="text" name="city" id="city" /></label>
+                        <label>State:<input type="text" name="state" id="state" /></label>
+                        <label>Zip:<input type="text" name="zip" id="zip"  /></label>
+                        <label>Phone:<input type="text" name="phone" id="phone" /></label>
+                        <label>E-Mail:<input  type="text" name="email" id="email" /></label>
+                    </fieldset>
+                    
+                    <fieldset id="billing">
+                        <!--Renter's Payment Information -->
+                        <legend>Billing/Rental Information</legend>
+                        <label class="lower">Card Holder:<input type="text" name="cardName" id="cardName" /></label>
+                        <label>Card #: <input type="text" name="cardNum" id="cardNum" /></label>
+                        <label>CCV:<input type="text" name="ccv" id="ccv" /></label>
+                        <select>
+                            <option>Card Type</option>
+                            <option>Visa</option>
+                            <option>MasterCard</option>
+                            <option>Discovery</option>
+                        </select>
+                    </fieldset>
+                    
+                    <fieldset id="time">
+                        <!--Rental Time Period-->
+                        <legend>Rental Period</legend>
+                        <label class="lower"><input type="radio" name="rentalperiod" value="1" checked="checked"/>1 Day</label>
+                        <label><input type="radio" name="rentalperiod" value="2"/>2 Day</label>
+                        <label><input type="radio" name="rentalperiod" value="5"/>5 Day</label>
+                        <label><input type="radio" name="rentalperiod" value="7"/>7 Day</label><br/>
+                        <label>Coupon: <input class="indent" type="text" name="coupon" /></label>
+                    </fieldset>
+                    
+                    <fieldset id="feedback">
+                        <!--Comments-->
+                        <legend>Feedback</legend>
+                        <label class="lower"><textarea name="comments" id="comments" cols="60" rows="7"></textarea></label>
+                    </fieldset>
+                    
+                    <fieldset id="confirm">
+                        <!--Comfirmation Buttons-->
+                        <label><input type="checkbox" name="terms" id="terms" />Agreed to Terms and Conditions</label><br/>
+                        <input type="submit" name="submit" id="submit" value="Submit Order"/>
+                        <input type="reset" name="cancel" id="cancel" value="Cancel"  />
+                    </fieldset>
+                </form>    
+            </div>
+    </body>
+</html>
